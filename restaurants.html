@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/png6.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+       <!-- Bootstrap Icons -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+         
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+       
+       <title>Restaurants</title>
+
+    <style>
+
+body {
+              display: flex;
+              flex-direction: column;
+              min-height: 100vh;
+            }
+        
+            footer {
+              margin-top: auto;
+            }
+        
+            .footer-icon {
+              font-size: 1.5rem;
+              margin: 0 10px;
+              color: white;
+              transition: color 0.3s;
+            }
+        
+            .footer-icon:hover {
+              color: #0d6efd;
+            }
+
+ .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);          
+ }
+
+   .top-cloud {
+    position:absolute;
+    right: 20px;
+    top:180px;
+}
+
+.top-cloud1 {
+    position:absolute;
+    right: 900px;
+    top:30px;
+}
+
+.top-cloud2 {
+    position:absolute;
+    right: 1100px;
+    top:550px;
+}
+
+.top-cloud3 {
+    position:absolute;
+    right: 130px;
+    top:650px;
+}
+
+.top-cloud4 {
+    position:absolute;
+    right: 1000px;
+    top:900px;
+}
+
+.top-cloud5 {
+    position:absolute;
+    right: 100px;
+    top:1050px;
+}
+
+.top-cloud6 {
+    position:absolute;
+    right: -150px;
+    top:1350px;
+}
+
+.top-cloud7 {
+    position:absolute;
+    right: 1000px;
+    top:1350px;
+}
+
+.top-cloud8 {
+    position:absolute;
+    right: 500px;
+    top:1900px;
+}
+
+
+h1{
+    font-family:'Poppins','sans-serif' ;
+    font-size: 60px;
+  }
+
+  @media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+ @media (max-width: 480px) {
+ h1 {
+    font-size: 20px;
+  }
+}
+
+  h2,h5{
+    font-family:'Great-Vibes', cursive;
+    font-size: 40px;
+  }
+
+  @media (max-width: 768px) {
+  h2,h5 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+ h2,h5 {
+    font-size: 20px;
+  }
+}
+
+p{
+  font-family:'Sacramento', cursive ;
+  font-size:20px ;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+} 
+
+@media (max-width: 480px) {
+p {
+    font-size: 10px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html ">
+                <img src="images/photo1.png" width="60" height="40" class="me-2">
+                Home</a>
+                <button class="navbar-toggler">
+                    <span class="navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html"> Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+      <div style="background-color: #eb5a4f; color: rgb(0, 0, 0); padding: 20px;">
+
+        <img src="images/png4.png" class="top-cloud"  width="250" height="250">
+        <img src="images/png5.png" class="top-cloud1"  width="400" height="400">
+        <img src="images/png2.png" class="top-cloud2"  width="300" height="200">
+        <img src="images/png7.png" class="top-cloud3"  width="200" height="200">
+        <img src="images/png10.png" class="top-cloud4"  width="400" height="400">
+        <img src="images/png9.png" class="top-cloud5"  width="200" height="200">
+        <img src="images/png3.png" class="top-cloud6"  width="500" height="450">
+        <img src="images/png8.png" class="top-cloud7"  width="400" height="400">
+
+        <br>
+       <div class="text-center"><h1>Restaurants</h1></div>
+
+
+        <div class="card w-50 mx-auto mt-5 shadow-lg p-2 rounded" style="width:18 rem;">
+        <img src="images/photo3.jpg" class="card-img-top" height="300 rem" >
+        <div class="card-body text-center">
+            <h2 class="card-title">Pizza Place</h2>
+            <p class="card-text">Where tradition meets flavor – experience the rich 
+              taste of authentic Italian pizza, handcrafted with fresh ingredients
+               and baked to perfection every single day.</p>
+       <a href="#menu" class="btn btn-danger">View Menu</a>
+        </div>
+        </div>
+
+        <div class="card w-50 mx-auto mt-5 shadow-lg p-2 rounded" style="width:18 rem;">
+            <img src="images/photo4.jpg" class="card-img-top" height="300 rem" >
+            <div class="card-body text-center">
+                <h2 class="card-title">Traditional restaurant</h2>
+                <p class="card-text">If you’re visiting for the first time, don’t miss
+                   the chance to eat at one of the traditional food places, where you
+                    can enjoy authentic local dishes passed down through generations.</p>
+           <a href="#menu" class="btn btn-danger">View Menu</a>
+            </div>
+            </div>
+
+            <div class="card w-50 mx-auto mt-5 shadow-lg p-2 rounded" style="width:18 rem;">
+                <img src="images/photo5.jpg" class="card-img-top" height="300 rem" >
+                <div class="card-body text-center">
+                    <h2 class="card-title">The Classic Baab Pastry</h2>
+                    <p class="card-text">We proudly serve The Classic Baab Pastry —
+                       a golden, fluffy delight baked fresh every day, carrying the 
+                       true taste of tradition in every bite.</p>
+               <a href="#menu" class="btn btn-danger">View Menu</a>
+                </div>
+                </div>
+                <br><br><br><br><br>  <br><br><br><br><br>
+
+       <img src="images/png1.png" class="top-cloud8"  width="400" height="400">
+      </div>
+
+      
+      <div style="background-color: #f09089; color: rgb(0, 0, 0); padding: 20px;">
+         <br><br>
+         <section id="menu">
+           <div class="text-center"><h1>Our Menu</h1></div></section>
+        
+         <br><br>
+
+        <div class="container mt-4">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (5).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Traditional Stews Served</h5>
+                  <p class="card-text">A comforting traditional stew made with tender chicken
+                     and rich spices, served with perfectly steamed rice for a hearty and
+                      satisfying meal.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">250$</a></div> 
+                </div>
+              </div>
+            </div>
+        
+            <!-- کارت‌های بیشتر -->
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (29).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Lamb Kebab Stew</h5>
+                  <p class="card-text">Chargrilled lamb kebabs cooked slowly in a flavorful traditional stew, bringing bold taste and tender texture together.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">300$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (22).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Koobideh Kebab</h5>
+                  <p class="card-text">A classic minced meat kebab made with seasoned ground lamb or beef, grilled over open flame for a smoky, juicy flavor. Served with saffron rice, grilled tomatoes, and fresh herbs.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">200$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (20).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Kebab</h5>
+                  <p class="card-text">Tender pieces of marinated chicken, grilled to perfection over open flame for a smoky, juicy flavor. Served with fragrant rice, grilled vegetables, and fresh herbs.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">150$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (27).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Delicious Chicken Thigh Kebab</h5>
+                  <p class="card-text">Juicy and flavorful chicken thigh pieces marinated with aromatic spices, grilled to perfection over an open flame. Served with fragrant saffron rice, grilled vegetables, and fresh herbs for a satisfying meal.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">150$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (31).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Wings</h5>
+                  <p class="card-text">Crispy and juicy chicken wings, seasoned with a blend of spices and either grilled or fried to perfection. Served with your choice of dipping sauces for a flavorful experience.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">100$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (21).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Grilled Fish</h5>
+                  <p class="card-text">Fresh fish fillet marinated with herbs and spices, grilled to perfection for a tender and flavorful experience. Served with lemon wedges and a side of seasonal vegetables.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">200$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (7).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Garlic Butter Shrimp</h5>
+                  <p class="card-text">Succulent shrimp marinated in a blend of herbs and spices, grilled to perfection for a smoky and tender bite. Served with a side of fresh salad and lemon wedges.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">250$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (38).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Spicy Shrimp Soup</h5>
+                  <p class="card-text">A flavorful shrimp soup made with fresh shrimp, aromatic herbs, and a rich broth. Served hot, perfect for warming your soul on any day.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">250$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (23).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Shami Kebab</h5>
+                  <p class="card-text">Delicious pan-fried patties made from minced meat blended with herbs and spices, offering a crispy exterior and tender inside. Perfect as a starter or main dish, served with fresh herbs and dipping sauces.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">200$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (2).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Meat & Mushroom Pizza</h5>
+                  <p class="card-text">A delicious pizza topped with seasoned ground meat and fresh mushrooms, baked to perfection with melted cheese and a crispy golden crust. A savory treat for meat and mushroom lovers.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">350$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (35).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Fresh Vegetable Pizza</h5>
+                  <p class="card-text">A vibrant pizza topped with a colorful mix of fresh vegetables, including bell peppers, tomatoes, olives, and mushrooms. Baked to perfection with melted cheese and a crispy crust for a healthy and delicious choice.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">300$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (33).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Spaghetti</h5>
+                  <p class="card-text">Traditional spaghetti cooked al dente, served with a rich tomato sauce made from fresh tomatoes, garlic, and herbs. A timeless Italian favorite that’s simple yet full of flavor.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">150$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (37).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Spaghetti with Ground Beef</h5>
+                  <p class="card-text">Al dente spaghetti served with a rich and savory meat sauce, made from seasoned ground beef, tomatoes, and aromatic herbs. A hearty and satisfying Italian classic that delights every palate.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">150$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (25).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Eggs</h5>
+                  <p class="card-text">Simple and delicious classic eggs cooked to your preference—whether scrambled, fried, or boiled. A perfect protein-packed start to your day.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">50$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (26).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Fried Eggs</h5>
+                  <p class="card-text">Golden fried eggs with crispy edges and a soft, runny yolk. Perfectly cooked to add a rich flavor and satisfying texture to any meal.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">50$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (11).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Blueberry Cupcake</h5>
+                  <p class="card-text">A moist and fluffy cake bursting with fresh blueberries in every bite. Perfectly sweetened and baked to golden perfection, this cake offers a delightful balance of fruity freshness and rich texture.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">100$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (15).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Fluffy Pancakes</h5>
+                  <p class="card-text">Light and fluffy pancakes made from a classic batter, cooked to golden perfection. Served warm with butter and maple syrup for a delicious and comforting breakfast treat.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">100$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (10).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Classic Blueberry Cake</h5>
+                  <p class="card-text">A moist and fluffy cake bursting with fresh blueberries in every bite. Perfectly sweetened and baked to golden perfection, this cake offers a delightful balance of fruity freshness and rich texture.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">100$</a></div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/photo6 (3).jpg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Refreshing Beverages</h5>
+                  <p class="card-text">A variety of refreshing beverages made from the freshest ingredients, including fruit juices, smoothies, and classic drinks. Perfect to quench your thirst and complement any meal.</p>
+                 <div class="text-center card-footer"><a href="#" class="btn btn-danger">50$</a></div> 
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+<br>
+
+      </div>
+
+
+  <!-- فوتر -->
+  <footer class="bg-dark text-white text-center py-1">
+
+    <!-- آیکون‌ها -->
+    <p class="mt-3 mb-0">© 2025 Foodie Hub</p>
+    <a href="mailto:info@example.com" class="footer-icon" title="ایمیل">
+      <i class="bi bi-envelope"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" class="footer-icon" title="اینستاگرام">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://t.me/yourusername" target="_blank" class="footer-icon" title="تلگرام">
+      <i class="bi bi-telegram"></i>
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank" class="footer-icon" title="واتساپ">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
